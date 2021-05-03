@@ -1,63 +1,214 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
-/* * { */
-  /* box-sizing: border-box;
+.nav-link{
+  font-size: 20px;
+  font-weight: 500;
 }
-
-body {
-  font-family: 'Muli', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+.nav-link i{
+  padding: 10px;
 }
-
-.container {
-  display: flex;
-  width: 90vw;
-} */
-
-.card {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
- 
-  border-radius: 50px;
-  color: #fff;
-  cursor: pointer;
-  flex: 0.5;
-  margin: 10px;
-  position: relative;
-  -webkit-transition: all 700ms ease-in;
+.heading{
+  padding-bottom: 15px;
 }
+.home-section{
+  /* background-image: url('home-bg.jpg'); */
+  background-color: #F6F5F5;
+  height: 80vh;
+}
+.about-section{
+  background-image: url('service.jpg');
+  height: 80vh;
+}
+img{
+    max-width: 60%;
+  max-height: 60%;
+}
+.about-section{
+  height: 300px;
 
-.card h5 {
-  font-size: 24px;
+}
+.hire-btn{
+border:2px solid #373636;
+color:#373636;
+background-color:transparent;
+
+}
+.down-cv{
+
+color:#fff;	
+border:none;
+}
+.about-section{
+width:80%;
+height:330px;
+background:#ffffff;
+border-radius:20px;
+box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+display: flex;
+margin: -7%  auto -5% auto;
+position: relative;
+justify-content:space-evenly;
+align-items: center;
+}
+.about-section img{
+height:250px;
+}
+.about-text{
+width:500px;
+} 
+.about-text p:nth-child(1){
+color:#403e3e;
+font-family: myriad pro;
+font-weight:bold;
+font-size:23px;
+line-height:0px;
+}
+.about-text p:nth-child(2){
+color:#3e3d3d;
+font-size:13px;
+font-family: myriad pro;
+font-weight:bold;
+line-height:5px;
+}
+.about-text p:nth-child(3),.about-text p:nth-child(4){
+color:#7e7d7d;
+font-family:calibri;
+font-size:16px;
+}
+.about-text button{
+width:120px;
+height: 40px;
+color:#ffffff;
+outline:none;
+border:none;
+font-family: calibri;
+background-color:#262525;
+}
+.skill-section{
+background-color: #F6F5F5;
+padding-top: 7%; 
+padding-bottom: 3%;
+padding-right: 2%;
+padding-left: 2%;
+margin-bottom: 25px;
+}
+.input-group-text{
+height: 50px;
+
+}
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+.social{
+padding: 20px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+.footer{
+background-color: #F6F5F5;
+}
+.navbar-nav li a::after {
+  content: "";
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
+  display: block;
+  height: 0.4em;
+  width: 0%;
+  background-color: blue;
+  transition: all ease-in-out 250ms;
 }
 
-.caed.active {
-  flex: 5;
+
+.app-form-group {
+  margin-bottom: 15px;
 }
 
-.card.active h5 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+.app-form-group.message {
+  margin-top: 40px;
 }
 
-@media (max-width: 480px) {
-  .container {
-    width: 100vw;
-  }
-
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
-  }
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
 }
+
+.app-form-control {
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #ea1d6f;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #b9134f;
+}
+.app-form {
+  padding:5px 15%;
+}
+
+.navbar-nav li a:hover::after {
+  width: 8%;
+  margin-left: 20px;
+}
+
+@media(max-width:1000px){
+*{
+  box-sizing: border-box;
+}
+.navbar-nav li a:hover::after {
+  width: 20%;
+  margin-left: 20px;
+}
+.about-container{
+  width:90%;
+  border-radius: 10px;
+}
+.about-container img{
+  height: 200px;
+}
+.about-text{
+  width: 400px;
+}
+.about-text p:nth-child(1){
+  font-size: 20px;
+}
+.about-text p:nth-child(2){
+  font-size: 10px;
+}
+
+.about-text p:nth-child(3),
+.about-text p:nth-child(4){
+  font-size: 14px;
+}
+.form-control{
+  border-radius: 50%;
+}
+
+
