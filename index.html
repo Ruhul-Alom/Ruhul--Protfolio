@@ -1,271 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruhul's Protfolio</title>
-    <!-- CSS only -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Ruhul's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-<link rel="stylesheet" href="style.css">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="script.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_8wKsnjghjOo1wfVCSAYXG");
+})();
+</script>
+
+  </script>
 </head>
+
 <body>
-  <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Ruhul'Site</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home"><i class="fas fa-home"></i>Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about"><i class="fas fa-address-card"></i>About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#project"><i class="fas fa-project-diagram"></i>Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#cv"><i class="far fa-blog"></i>Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#cv"><i class="far fa-file-user"></i>Resume</a>
-              </li>
-          </ul>
-          
-        </div>
-      </nav>  
-  
-     <section class="home-section" id="home">  
-        <div class="home-content">
-          <div class="row d-flex align-items-center justify-content-center">
-            <div class=" col-md-6 home-header ">
-              <h1 class="heading text-dark">
-                Hi There! <span className="wave">👋🏻</span>
-              </h1>
 
-              <h1 class="heading-name text-dark">
-                I'M
-                <strong class="main-name text-dark">Ruhul Alom</strong>
-              </h1>
-              <p id="text "class="text-info">A FULL STACK WEB DEVELOPER</p>
-              <!-- <script src="script.js"></script> -->
-              <!-- <button class="hire-btn btn bt-primary ">Hire me</button> -->
-			         <a  href="Ruhul Resume.zip" class=" btn btn-primary down-cv" id="cv"><i class="fas fa-download"></i>Download CV</a>
-              </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+    <div class="container">
 
-         <div class="col-md-5">
-              <img src="images/arif.png" alt="home pic" class="img-fluid rounded-circle" />
-            </div>
-        </div>
+      <!-- <h1><a href="index.html">Emily Jones</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>I'm a passionate <span>Web Developer</span> from Bangladesh</h2>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <div class="social-links">
+        
+        <a href="https://www.facebook.com/" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="https://www.instagram.com/" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="https://github.com/Ruhul-Alom" class="google-plus"><i class="icofont-github"></i></a>
+        <a href="https://www.linkedin.com/in/md-ruhul-alom-4390b3211/" class="linkedin"><i class="icofont-linkedin"></i></a>
+      </div>
+
     </div>
-  </section>
-     <section class="about-section" id="about">
-        <!--img-->
-          <img src="images/arif.png">
-        <!--about-me-text-->
-          <div class="about-text">
-          <p>About Me</p>
-          <p>Devolper & Designer</p>
-          <h4 id="about-text">Starting...</h4>
-         <a href="Ruhul Resume.zip" class=" btn btn-primary down-cv" id="cv"><i class="fas fa-download"></i>Download CV</a>
-          </div>
-      <script src="aboutScript.js"></script>
-     </section>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Learn more about me</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="images/side-image.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Frontend Web Developer</h3>
+          <p class="font-italic" id="about-text">
+           starting....
+          </p>
+           
+ 
+        </div>
+      </div>
+    <script src="aboutScript.js"></script>
+    </div><!-- End About Me -->
+
     
 
-     <section class="skill-section">
-       <h2 class="text-center text-info pb-2">My Proffesional  Skill</h2>
-      
-       <div class="row d-flex justify-content-center align-items-center">
-        
-         <div class="col-md-6">
-           <div class="row">
-         <div class=" col-6 col-sm-4 col-md-2 " >
-           <img src="images/html.png" alt="">
-         </div>
-         <div class=" col-6 col-sm-4 col-md-2 ">
-          <img src="images/css.png" alt="">
-         </div>
-         <div class=" col-6 col-sm-4 col-md-2 " >
-          <img src="images/bootstrap.png" alt="">
-         </div>
-         <div class="col-6 col-sm-4 col-md-2 " >
-          <img src="images/react.png" alt="">
-         </div>
-         <div class="col-6 col-sm-4 col-md-2 ">
-          <img src="images/node.png" alt="">
-         </div>
-         <div class="col-6 col-sm-4 col-md-2 ">
-          <img src="images/git.jpg" alt="">
-         </div>
-       </div>
-       <div class="row">
-        <div class=" col-6 col-sm-4 col-md-2 " >
-          <img src="images/heroku.png" alt="">
-        </div>
-        <div class=" col-6 col-sm-4 col-md-2 ">
-         <img src="images/netlify.png" alt="">
-        </div>
-        <div class=" col-6 col-sm-4 col-md-2 " >
-         <img src="images/bootstrap.png" alt="">
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 " >
-         <img src="images/react.png" alt="">
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 ">
-         <img src="images/node.png" alt="">
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 ">
-         <img src="images/git.jpg" alt="">
-        </div>
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
       </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">HTML <i class="val">100%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">CSS <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Express Js <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">Mongo DB <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">PHP <i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">React <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">JavaScript <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">Bootstrap <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+         
+        </div>
+
       </div>
-  
-      <div class="col-md-6">
+
+    </div><!-- End Skills -->
+
+    <!-- ======= Interests ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Interests</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="fab fa-html5" style="color: #ffbb2c;"></i>
+            <h3>HTML</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="fab fa-css3-alt"style="color: #5578ff;"></i>
+            <h3>CSS</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="fab fa-bootstrap" style="color: #e80368;"></i>
+            <h3>Bootstrap</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="fab fa-react"style="color: #e361ff;"></i>
+            <h3>React</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="fas fa-container-storage" style="color: #47aeff;"></i>
+            <h3>Netlify</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="fab fa-node"style="color: #ffa76e;"></i>
+            <h3>Node</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="fas fa-database"style="color: #11dbcf;"></i>
+            <h3>Mongo Db</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="fab fa-java"style="color: #4233ff;"></i>
+            <h3>Java</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="fab fa-python"tyle="color: #b2904f;"></i>
+            <h3>Python</h3>
+          </div>
+        </div>
        
-        <div class="row">
-          <div class="col-md-3"> HTML</div>
-          <div class="progress col-md-9">
-          <div class="progress-bar bg-sucess" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">90%</div>
-        </div>
-         </div>
-        <div class="row">
-          <div class="col-md-3"> CSS</div>
-          <div class="progress col-md-9">
-          <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">90</div>
-        </div>
-         </div>
-        <div class="row">
-          <div class="col-md-3"> React</div>
-          <div class="progress col-md-9">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">80%"</div>
-        </div>
-         </div>
-        <div class="row">
-          <div class="col-md-3"> Bootstrap</div>
-          <div class="progress col-md-9">
-          <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> 90%</div>
-        </div>
-         </div>
-        <div class="row">
-          <div class="col-md-3"> Node</div>
-          <div class="progress col-md-9">
-          <div class="progress-bar bg-warning" role="progressbar" style="width:70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">70%</div>
-        </div>
-         </div>
-        <div class="row">
-          <div class="col-md-3"> Mongo DB</div>
-          <div class="progress col-md-9">
-          <div class="progress-bar bg-info" role="progressbar" style="width:80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">80%</div>
-        </div>
-         </div>
+
+    </div><!-- End Interests -->
+
+    
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
       </div>
-      </div>
-     </section>
-     <section class="project-section" id="project">
-      <h2 class="text-center text-info pb-4">My Project</h2>
-       <div class="row">
-         <div class="col-lg-3 col-sm-6 col-12" >
-           <div class="card  shadow-lg" >
-            <h5 class="card-title text-center">Flight Booking</h5>
-            <img class="card-img-top img-fluid" src="images/project4.png" alt="Card image cap">
-            <div class="card-body">
-            <p class="card-text">Project Description: The project was focused on integration javascript . The
-              main work of this project is show flight price and booking info .I used  HTML, CSS, Bootstrap, mongo DB, React, Express js</p>
-            <div class="d-flex justify-content-around"> 
-            <a href="https://github.com/Ruhul-Alom/Assignment-4" class="btn btn-primary">See Code</a>
-             <a href="https://ruhul-alom.github.io/Assignment-4/." class="btn btn-primary">Live Site</a>
-            </div>
-          </div>
-          </div>
-         </div>
-         <div class="col-lg-3 col-sm-6 col-12 ">
-          <div class="card singleProject shadow" >
-           <h5 class="card-title text-center">Hungry Monster</h5>
-           <img class="card-img-top img-fluid" src="images/assignment6.png" alt="Card image cap">
-           <div class="card-body">
-             <p class="card-text">Project Description: The project was focused on integration of API with react and react router. The main work of this project is show basic information of food based on search .Serach listed food will apear in the screen .
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Sumary</h3>
+          <div class="resume-item pb-0">
+            <h4>Md Ruhul Alom</h4>
+            <p><em>Graduate of computer science with experience working across the full-stack of web development. I’ve built a few
+              projects by myself and I’m looking for a position  where I can grow my knowledge  and learn new thing  from other experienced team members.</em></p>
+            <p>
+            <ul>
+              <li>Sylhet Bangladesh</li>
+              <li>01640119015</li>
+              <li>mdruhulalom02@gmail.com</li>
+            </ul>
             </p>
-             <div class="d-flex justify-content-around">
-             <a href="https://github.com/Ruhul-Alom/Assignment5" class="btn btn-primary">See Code</a>
-             <a href=" https://ruhul-alom.github.io/Assignment5/" class="btn btn-primary">Live Site</a>
-            </div>
-           </div>
-         </div>
-        </div>
-        <div class="col-lg-3 col-sm-6 col-12">
-          <div class="card shadow">
-            <h5 class="card-title text-center">Team Finder</h5>
-           <img class="card-img-top img-fluid" src="images/assignment8.png" alt="Card image cap">
-           <div class="card-body">
-             <p class="card-text">Project Description: The project was focused on integration of API with react and react router. The main work of this project is show basic information of football league from API.Information will show base on user serach</p>
-             <div class="d-flex justify-content-around">
-             <a href="https://github.com/Porgramming-Hero-web-course/react-router-Ruhul-Alom" class="btn btn-primary">See Code</a>
-             <a href="https://604a5a576ad8b10deb17f555--sad-sammet-98a5bb.netlify.app/ " class="btn btn-primary">Live Site</a>
-           </div>
           </div>
-         </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>B.Sc(Engg.)in &amp; Computer Science </h4>
+            <h5>2017 - 2021</h5>
+            <p><em>North East University Bangladesh</em></p>
+           
+          </div>
+          <div class="resume-item">
+            <h4>Higer Secondary School Certificate</h4>
+            <h5>2013 - 2015</h5>
+            <p><em>Mc Collage Sylhet</em></p>
+           
+          </div>
         </div>
-        <div class="col-lg-3 col-sm-6 col-12">
-          <div class="card  shadow"  >
-            <h5 class="card-title text-center">IT Solution Bd</h5>
-           <img class="card-img-top img-fluid" src="images/assignment11.png" alt="Card image cap">
-           <div class="card-body">
-             <p class="card-text">Project Description: It is an IT service providing website where a user can get information various
-              service information and their service charge. 
-              Used Technology: HTML, CSS, Bootstrap, mongo DB, React, Express js</p>
-            <div class="d-flex justify-content-around">
-             <a href="https://github.com/Ruhul-Alom/IT-Solution-Bd" class="btn btn-primary">See Code</a>
-             <a href="https://knowledge-house-1e0e1.web.app/" class="btn btn-primary">Live Site</a>
+        <div class="col-lg-6">
+          <h3 class="resume-title">Professional Skill</h3>
+          <div class="resume-item">
+            <p>
+            <ul>
+              <li><strong >Expertise:</strong> JavaScript, React.js, React Bootstrap, Bootstrap5, HTML5, CSS3, Node.js,
+                Express.js, MongoDB, </li>
+              <li><strong >Familiar:</strong> C, Java, Python, Php, ES6
+              </li>
+              <li><strong >Tools:</strong> GitHub, Visual Studio Code, Sublime Text, Atoms, Notepad++, Chrome
+                Dev tool, Firebase, Netlify, Heroku </li>
+            </ul>
+            </p>
+          </div>
+          <h3 class="resume-title">Project Sumarry</h3>
+          <div class="resume-item">
+            <p>
+            <ul>
+              <li><strong > Project Name:</strong> BEST ORGANIZATION: <a href="https://github.com/Ruhul-Alom/Best_Organization">CODE LINK</a></li>
+              <li><strong > Project Name</strong> IT SOLUTION <a href="https://knowledge-house-1e0e1.web.app/">LIVE SITE</a>|<a href="https://github.com/Ruhul-Alom/IT-Service-Bd">CLIENT</a>|<a href="https://github.com/Ruhul-Alom/IT-Solution-Bd">SERVER</a>|
+              </li>
+              <li><strong > Project Name:</strong>TEAM FINDER <a href="https://604a5a576ad8b10deb17f555--sad-sammet-98a5bb.netlify.app/">LIVE SITE</a> <a href="https://github.com/Ruhul-Alom/Team-Finder">CODE LINK</a> </li>
+              <li><strong > Project Name:</strong>HUNGRY MONSTER<a href="https://ruhul-alom.github.io/Assignment5/.">LIVE SITE</a> <a href="https://github.com/Ruhul-Alom/Assignment5">CODE LINK</a> </li>
+              <li><strong > Project Name:</strong>FLIGHT BOOKING<a href="https://ruhul-alom.github.io/Assignment-4/.">LIVE SITE</a> <a href="https://github.com/Ruhul-Alom/Assignment-4">CODE LINK</a> </li>
+            </ul>
+            </p>
+            <h5 class="mt-5 fa fa-download"><a class="pl-2 " href="assets/Ruhul Resume.zip">Download Resume</a></h5>
+          </div>
+        </div> 
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="blog" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Blog</h2>
+        <p>My Blog</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><i class="fab fa-js-square"></i></div>
+            <h6><a href="https://mdruhulalom02.medium.com/starting-with-javascript-71040fcf5ac9">Starting with javaScript</a></h6>
+            <p>  The initial keyword for any variable declaration is var, let, const. Variable is something that’s hold value and can change in other time.</p>
+            <a class="btn btn-info mt-4" href="https://mdruhulalom02.medium.com/starting-with-javascript-71040fcf5ac9">Read more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><i class="fab fa-js"></i></div>
+            <h6><a href="https://mdruhulalom02.medium.com/some-important-topic-of-javascript-dd674543064e">Some Important Topic of JavaScript</a></h6>
+            <p>Codding Style: The actual art of programming is to take a complex task and make it into correct and human-readable code.</p>
+            <a class="btn btn-info mt-4" href="https://mdruhulalom02.medium.com/starting-with-javascript-71040fcf5ac9">Read more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+          <div class="icon-box">
+            <div class="icon"><i class="fab fa-react"></i></div>
+            <h4><a href="">Basic Of REACT</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            <a class="btn btn-info mt-4" href="https://mdruhulalom02.medium.com/starting-with-javascript-71040fcf5ac9">Read more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>My Works</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="images/Flight-Booking.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web</h4>
+              <p>Flight-Booking</p>
+              <div class="portfolio-links">
+                <a href="images/project4.png" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="FLIGHT BOOKING.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
             </div>
           </div>
-           </div>
-         </div>
         </div>
-      
-     </section>
-    <section class="contact mt-5">
-      <h3 class="text-center mt-3 text-info">Contact me at</h3>
-  <div class="d-flex justify-content-center align-items-center ">
-    <div class="app-form border mt-2">
-      <div class="app-form-group">
-        <input class="app-form-control" placeholder="NAME" value="Ruhul Alom">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="images/Hungry-Monster.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web </h4>
+              <p>Hungry-Monster</p>
+              <div class="portfolio-links">
+                <a href="images/Hungry-Monster.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="HUNGRY MONSTER.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="images/team-App.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web</h4>
+              <p>TEAM FINDER</p>
+              <div class="portfolio-links">
+                <a href="images/team-App.png" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="TEAM FINDER.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="images/IT-Solutions.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web</h4>
+              <p>IT SOLUTION</p>
+              <div class="portfolio-links">
+                <a href="images/IT-Solutions.png" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="IT SOLUTION.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+    
+
       </div>
-      <div class="app-form-group">
-        <input class="app-form-control" placeholder="EMAIL">
-      </div>
-      <div class="app-form-group">
-        <input class="app-form-control" placeholder="CONTACT NO">
-      </div>
-      <div class="app-form-group message">
-        <input class="app-form-control" placeholder="MESSAGE">
-      </div>
-      <div class="app-form-group buttons">
-        <button class="app-form-button">CANCEL</button>
-        <button class="app-form-button">SEND</button>
-      </div>
+
     </div>
-  </div>
-    </section> 
-    <div class="footer d-flex align-items-center justify-content-center">
-      <h5 class="text-info">design and develop by Ruhul</h5>
-      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-<a href="https://www.linkedin.com/in/md-ruhul-alom-4390b3211/" class="fa fa-linkedin"></a>
-<a href="https://mail.google.com/mail/u/0/#inbox" class="fa fa-google"></a>
-<a href="https://github.com/Ruhul-Alom" ><i class=" social fab fa-github"></i></a>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div>
+
+      <div class="row mt-2">
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-map"></i>
+            <h3>My Address</h3>
+            <p>3100, Sylhet, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-share-alt"></i>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="https://www.instagram.com/" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="https://github.com/Ruhul-Alom" class="google-plus"><i class="icofont-github"></i></a>
+        <a href="https://www.linkedin.com/in/md-ruhul-alom-4390b3211/" class="linkedin"><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-envelope"></i>
+            <h3>Email Me</h3>
+            <p>mdruhulalom02@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <i class="bx bx-phone-call"></i>
+            <h3>Call Me</h3>
+            <p>+8801640119015</p>
+          </div>
+        </div>
+      </div>
+
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+        <div class="form-row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-6 form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+          <div class="validate"></div>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+          <div class="validate"></div>
+        </div>
+        <div class="mb-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
     </div>
-  </div>  
+  </section><!-- End Contact Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

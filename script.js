@@ -1,22 +1,9 @@
-const textEl = document.getElementById('text')
-const text = 'We Love Programming!'
-let idx = 1
-let speed= 1000;
+function sendMail(params) {
+    var tempParams={
+        from_name:document.getElementById("fromName").value,
+        to_name:document.getElementById("toName").value,
+        message:document.getElementById("mass").value,
 
-writeText()
-
-function writeText() {
-    textEl.innerText = text.slice(0, idx)
-
-    idx++
-
-    if(idx > text.length) {
-        idx = 1
-    }
-
-    setTimeout(writeText, speed)
+    };
+    emailjs.send(service_j3wv1gb,template_ejhbois)
 }
-
-
-
-
